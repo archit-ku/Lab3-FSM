@@ -26,6 +26,18 @@ TEST_F(TestAdd, AddTest)
 TEST_F(TestAdd, AddTest2)
 {
     // Create a test case here. Maybe fail this to see what happens?
+    EXPECT_GT(add(2,4), 5);
+
+    /*
+    failed tests:
+    EXPECT_GT(add(2,4), 7);
+
+    adding another clause you expect to fail does not change
+    the reported number of failures; whole block still just
+    counts as a fail
+    
+    EXPECT_GT(add(2,4), 8);
+    */
 }
 
 int main(int argc, char **argv)
